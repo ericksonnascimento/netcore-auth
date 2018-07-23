@@ -1,0 +1,14 @@
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.deps.json
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.runtimeconfig.json
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.runtimeconfig.dev.json
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.dll
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.pdb
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.csprojAssemblyReference.cache
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.csproj.CoreCompileInputs.cache
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.RazorAssemblyInfo.cache
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.RazorAssemblyInfo.cs
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.AssemblyInfoInputs.cache
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.AssemblyInfo.cs
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.RazorTargetAssemblyInfo.cache
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.dll
+B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.pdb
