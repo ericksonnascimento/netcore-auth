@@ -1,5 +1,8 @@
 # netcore-auth
 Exemplo de autenticação via JWT no ASP.NET Core.
 
-##API
+## API
 Exemplos de consumo da API encontram-se disponíveis no POSTMAN, que pode ser importado a partir da url (https://www.getpostman.com/collections/405c7f4b634e10b636cd)
+
+## Swagger
+Acessar '/swagger' para exibir detalhes do consumo da API.

@@ -13,6 +13,13 @@ namespace Auth.Api.Controllers
     [Route("api/[controller]")]
     public class UserController: Controller
     {
+        /// <summary>
+        /// Gera um novo token de acesso caso as credencias estejam válidas
+        /// </summary>
+        /// <param name="login"></param>
+        /// <param name="signingConfigurations"></param>
+        /// <param name="tokenConfigurations"></param>
+        /// <returns>Token de acesso</returns>
         [AllowAnonymous]
         [HttpPost("login")]
         public object Login([FromBody]Login login,

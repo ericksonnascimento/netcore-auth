@@ -12,3 +12,4 @@ B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.AssemblyInfo.cs
 B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.RazorTargetAssemblyInfo.cache
 B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.dll
 B:\Github\netcore-auth\Auth.Api\obj\Debug\netcoreapp2.1\Auth.Api.pdb
+B:\Github\netcore-auth\Auth.Api\bin\Debug\netcoreapp2.1\Auth.Api.xml

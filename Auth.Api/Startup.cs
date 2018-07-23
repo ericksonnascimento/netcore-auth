@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Auth.Api.Configuration;
@@ -11,6 +12,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.PlatformAbstractions;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Auth.Api
 {
@@ -32,6 +35,32 @@ namespace Auth.Api
                 Configuration.GetSection("TokenConfiguration"))
                     .Configure(tokenConfigurations);
             services.AddSingleton(tokenConfigurations);
+
+            // Configurando o serviço de documentação do Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1",
+                    new Info
+                    {
+                        Title = "Autenticação via JWT",
+                        Version = "v1",
+                        Description = "Exemplo de API REST criada com o ASP.NET Core para realizar autenticação via JWT",
+                        Contact = new Contact
+                        {
+                            Name = "Erickson Nascimento",
+                            Url = "https://github.com/ericksonnascimento/netcore-auth"
+                        }
+                    });
+
+                string caminhoAplicacao =
+                    PlatformServices.Default.Application.ApplicationBasePath;
+                string nomeAplicacao =
+                    PlatformServices.Default.Application.ApplicationName;
+                string caminhoXmlDoc =
+                    Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
+
+                c.IncludeXmlComments(caminhoXmlDoc);
+            });
 
 
             services.AddAuthentication(authOptions =>
@@ -82,6 +111,14 @@ namespace Auth.Api
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseMvc();
+
+            // Ativando middlewares para uso do Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json",
+                    "Autenticação via JWT");
+            });
         }
     }
 }
